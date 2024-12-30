@@ -23,6 +23,7 @@ for I in $(seq 1 ${EMBEDDING_WORKERS}); do
 	-e EMBEDDING_QUEUE_LOCAL=${EMBEDDING_QUEUE_LOCAL:= } \
 	-e EMBEDDING_CUDA_DEVICE="cuda:${J}" \
 	-e VECTOR_STORE_QUEUE=${VECTOR_STORE_QUEUE:-/queue/vectorstore} \
+	-e EMBEDDING_TEST=${EMBEDDING_TEST:= } \
 	--name ${DOCKER_CONTAINER_NAME:-embedding_app} \
 	${DOCKER_IMAGE:-tfearn/opschat-ingestion-app-w-gpu}
 done

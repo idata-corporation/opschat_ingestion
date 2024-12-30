@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-export ACTIVEMQ_HOST=10.128.135.97
+export ACTIVEMQ_HOST=${ACTIVEMQ_HOST:-127.0.0.1}
 export ACTIVEMQ_PORT=61616
 
 export LOG_DIR=${LOG_DIR:-/tmp/docker_embedding_logs}
