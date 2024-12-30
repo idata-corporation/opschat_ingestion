@@ -6,7 +6,7 @@ RUN apt-get update && \
 
 # Copy your application code
 COPY ./src /app
-COPY ./models /app/models
+#COPY ./models /app/models
 
 # Set working directory
 WORKDIR /app

@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-export ACTIVEMQ_HOST=10.128.135.254
+export ACTIVEMQ_HOST=${ACTIVEMQ_HOST:-10.128.135.254}
 export ACTIVEMQ_PORT=61616
 
 export LOG_DIR="/tmp/embedder_logs"
